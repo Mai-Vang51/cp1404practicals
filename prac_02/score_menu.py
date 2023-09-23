@@ -1,3 +1,7 @@
+"""
+CP1404 - Practical 2
+"""
+
 MENU = """(G)et a valid score\n(P)rint result\n(S)how stars\n(Q)uit"""
 
 

@@ -1,6 +1,5 @@
 """
-CP1404/CP5632 - Practical
-Broken program to determine score status
+CP1404 - Practical 2
 """
 import random
 
@@ -14,7 +13,8 @@ def main():
 
     result = determine_grade(score)
 
-    print(f"Your score is {result}")
+    print(f"Your result is {result}")
+
     score = random.randint(0, 100)
     result = determine_grade(score)
     print(f"The score of {score} is a {result}")
