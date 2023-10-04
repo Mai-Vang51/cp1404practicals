@@ -17,23 +17,23 @@ Answer the following questions:
 """
 
 # 1.
-# name = input("Name: ")
-# with open("name.txt", "w") as outfile:
-#     print(f"{name}", file=outfile)
-#
+name = input("Name: ")
+with open("name.txt", "w") as outfile:
+    print(f"{name}", file=outfile)
+
 # 2.
-# FILENAME = "name.txt"
-# in_file = open("name.txt")
-# name = in_file.read()
-# in_file.close()
-# print(f"Your name is {name}")
+FILENAME = "name.txt"
+in_file = open("name.txt")
+name = in_file.read()
+in_file.close()
+print(f"Your name is {name}")
 
 # 3.
-# in_file = open("numbers.txt")
-# first_number = in_file.readline()
-# second_number = in_file.readline()
-# print(int(first_number) + int(second_number))
-# in_file.close()
+in_file = open("numbers.txt")
+first_number = in_file.readline()
+second_number = in_file.readline()
+print(int(first_number) + int(second_number))
+in_file.close()
 
 # 4.
 total = 0
