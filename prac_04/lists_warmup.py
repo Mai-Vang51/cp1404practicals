@@ -13,12 +13,10 @@ numbers = [3, 1, 4, 1, 5, 9, 2]
 # 1.
 new_value = "ten"
 numbers[0] = new_value
-print(numbers)
 
 # 2.
 new_number = 1
 numbers[-1] = new_number
-print(numbers)
 
 # 3.
 new_list = numbers[2:]
