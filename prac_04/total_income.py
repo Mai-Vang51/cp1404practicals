@@ -11,25 +11,23 @@ def main():
     for month in range(1, number_of_months + 1):
         income = float(input(f"Enter income for month {month}: "))
         incomes.append(income)
-
     total = get_total_income(incomes, number_of_months)
-
     print_income_report(incomes, number_of_months, total)
 
 
 def get_total_income(incomes, number_of_months):
-    total = 0
+    total_income = 0
     for month in range(1, number_of_months + 1):
         income = incomes[month - 1]
-        total += income
-    return total
+        total_income += income
+    return total_income
 
 
 def print_income_report(incomes, number_of_months, total):
     print("\nIncome Report\n-------------")
     for month in range(1, number_of_months + 1):
         income = incomes[month - 1]
-        print(f"Month {month:2} - Income: ${income:10.2f} Total: ${total:10.2f}") # add space between income and total
+        print(f"Month {month:2} - Income: ${income:10.2f}           Total: ${total:10.2f}")
 
 
 main()
