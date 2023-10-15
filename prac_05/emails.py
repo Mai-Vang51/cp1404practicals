@@ -2,7 +2,7 @@
 CP1404/CP5632 Practical
 Word Occurrences
 Estimate: 1 hour
-Actual: 
+Actual: 1 hour 10 minutes
 """
 
 
@@ -12,6 +12,13 @@ def main():
     while email != "":
         name = extract_name_from_email(email)
         confirmation = input(f"Is your name {name}? Y/n ").lower()
+        if confirmation == "no" or confirmation == "n":
+            name = input("Name: ")
+        email_to_name[email] = name
+        email = input("Email: ")
+
+    for email, name in email_to_name.items():
+        print(f"{name} ({email})")
 
 
 def extract_name_from_email(email):
