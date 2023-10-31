@@ -7,6 +7,8 @@ Actual: 1 hr
 
 from guitar import Guitar
 
+VINTAGE_AGE_THRESHOLD = 50
+
 
 def main():
     """Get information about guitars and display if they are vintage"""
@@ -33,7 +35,7 @@ def display_dynamic_language(guitars):
     """Print languages that are dynamically typed and are vintage"""
     print("These are my guitars:")
     for i, guitar in enumerate(guitars, 1):
-        vintage_string = "(vintage)" if guitar.get_age() >= 50 else ""
+        vintage_string = "(vintage)" if guitar.get_age() >= VINTAGE_AGE_THRESHOLD else ""
         print(f"Guitar {i}: {guitar.name:>20} ({guitar.year}), worth ${guitar.cost:,.2f} {vintage_string}")
 
 
